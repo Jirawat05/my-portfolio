@@ -1,10 +1,14 @@
-import th from './content/en'
-
+import { useLanguage } from './i18n/useLanguage'   
+import { LanguageToggle } from './components/LanguageToggle'
 function App() {
-  const t = th
+  const { t } = useLanguage()     
 
   return (
     <main className="min-h-screen bg-mist flex items-center justify-center px-6">
+       <div className="fixed top-4 right-4">                 {/* ← 3. ปุ่มชั่วคราว */}
+        <LanguageToggle />
+      </div>
+      <section className="max-w-3xl text-center"></section>
       <section className="max-w-3xl text-center">
         <p className="text-xl text-muted">{t.hero.greeting}</p>
         <h1 className="mt-2 text-6xl md:text-8xl font-semibold tracking-tight">
