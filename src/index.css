@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* ===== ธีมของเว็บ (Design Tokens) ===== */
+@theme {
+  /* สี: ได้แรงบันดาลใจจาก apple.com */
+  --color-ink: #1d1d1f;          /* ตัวหนังสือหลัก */
+  --color-muted: #6e6e73;        /* ตัวหนังสือรอง */
+  --color-mist: #f5f5f7;         /* พื้นเทาอ่อน */
+  --color-night: #000000;        /* พื้นส่วนสีดำ */
+  --color-accent: #0071e3;       /* ปุ่มหลัก */
+  --color-accent-hover: #0077ed;
+  --color-link: #0066cc;         /* ลิงก์ */
+
+  /* ฟอนต์: เครื่อง Apple จะได้ SF Pro, Windows ได้ Segoe UI, ภาษาไทยใช้ Noto Sans Thai */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+               "Segoe UI", "Noto Sans Thai", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===== ค่าพื้นฐานทั้งเว็บ ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-ink font-sans antialiased;
+  }
+}
