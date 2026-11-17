@@ -20,6 +20,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
   }
   body {
     @apply bg-white text-ink font-sans antialiased;
