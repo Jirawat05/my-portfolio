@@ -29,8 +29,12 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 3rem;
+    scrollbar-gutter: stable; 
   }
   body {
     @apply bg-white text-ink font-sans antialiased;
+  }
+  body:has(dialog[open]) {
+    overflow: hidden;
   }
 }

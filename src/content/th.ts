@@ -1,7 +1,7 @@
 import type { Content } from './types'
 
 const th: Content = {
-  nav: { about: 'เกี่ยวกับ', experience: 'ประสบการณ์', skills: 'ทักษะ', projects: 'ผลงาน', contact: 'ติดต่อ' },
+   nav: { about: 'เกี่ยวกับ', experience: 'ประสบการณ์', skills: 'ทักษะ', projects: 'ผลงาน', certificates: 'ใบรับรอง', contact: 'ติดต่อ' },
 
   hero: {
     greeting: 'สวัสดีครับ ผมชื่อ',
@@ -83,6 +83,7 @@ const th: Content = {
 
   certificates: {
     title: 'ใบรับรอง',
+    viewCredential: 'ดูใบรับรอง',
     items: [{ title: '[ชื่อใบรับรอง]', issuer: '[หน่วยงาน]', date: '2569' }],
   },
 
@@ -90,6 +91,8 @@ const th: Content = {
     title: 'มาคุยกัน',
     subtitle: 'พร้อมรับโอกาสฝึกงานและงานระดับเริ่มต้น',
     emailLabel: 'ส่งอีเมลหาผม',
+    copyEmail: 'คัดลอกอีเมล',
+    copied: 'คัดลอกแล้ว',
   },
 }
 

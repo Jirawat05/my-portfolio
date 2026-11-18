@@ -1,7 +1,7 @@
 import type { Content } from './types'
 
 const en: Content = {
-  nav: { about: 'About', experience: 'Experience', skills: 'Skills', projects: 'Projects', contact: 'Contact' },
+  nav: { about: 'About', experience: 'Experience', skills: 'Skills', projects: 'Projects', certificates: 'Certificates', contact: 'Contact' },
 
   hero: {
     greeting: "Hello, I'm",
@@ -83,13 +83,16 @@ const en: Content = {
 
   certificates: {
     title: 'Certificates',
-    items: [{ title: '[Certificate name]', issuer: '[Organization]', date: '2026' }],
+    viewCredential: 'View credential',
+        items: [{ title: '[Certificate name]', issuer: '[Organization]', date: '2026' }],
   },
 
   contact: {
     title: "Let's talk",
     subtitle: 'Open to internships and junior roles.',
     emailLabel: 'Email me',
+    copyEmail: 'Copy email',
+    copied: 'Copied',
   },
 }
 

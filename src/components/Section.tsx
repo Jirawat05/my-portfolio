@@ -5,6 +5,7 @@ type SectionProps = {
   id: SectionId
   title: string
   tone?: 'light' | 'mist' | 'dark'
+  align?: 'left' | 'center'   
   children: ReactNode
 }
 
@@ -14,10 +15,10 @@ const tones = {
   dark: 'bg-night text-white',
 }
 
-export function Section({ id, title, tone = 'light', children }: SectionProps) {
+export function Section({ id, title, tone = 'light', align = 'left', children }: SectionProps) {
   return (
     <section id={id} className={`${tones[tone]} px-6 py-24 md:py-32`}>
-      <div className="mx-auto max-w-5xl">
+      <div className={`mx-auto max-w-5xl ${align === 'center' ? 'text-center' : ''}`}>
         <h2 className="text-4xl md:text-6xl font-semibold tracking-tight leading-snug">
           {title}
         </h2>
