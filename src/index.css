@@ -14,6 +14,14 @@
   /* ฟอนต์: เครื่อง Apple จะได้ SF Pro, Windows ได้ Segoe UI, ภาษาไทยใช้ Noto Sans Thai */
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
                "Segoe UI", "Noto Sans Thai", "Helvetica Neue", Arial, sans-serif;
+
+  /* แอนิเมชัน: ค่อยๆ ลอยขึ้นตอนเปิดหน้า */
+  --animate-rise: rise 3s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(80px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
 }
 
 /* ===== ค่าพื้นฐานทั้งเว็บ ===== */
