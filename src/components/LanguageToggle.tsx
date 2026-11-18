@@ -20,7 +20,7 @@ export function LanguageToggle() {
             type="button"
             onClick={() => setLang(option.value)}
             aria-pressed={active}
-            className={`rounded-full px-3 py-1 font-medium transition-colors ${
+            className={`rounded-full px-3 py-2 md:py-1 font-medium transition-colors ${
               active ? 'bg-white text-ink shadow-sm' : 'text-muted hover:text-ink'
             }`}
           >
