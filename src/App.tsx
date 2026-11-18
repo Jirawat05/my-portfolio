@@ -2,7 +2,12 @@ import { useLanguage } from './i18n/useLanguage'
 import { Navbar } from './components/Navbar'
 import { Hero } from './sections/Hero'
 import { About } from './sections/About'
-import { sectionIds } from './content/sections'
+import { Experience } from './sections/Experience'
+import { Skills } from './sections/Skills'
+import { sectionIds, type SectionId } from './content/sections'
+
+// section ที่ทำเสร็จแล้ว จะไม่สร้างกล่องชั่วคราวให้
+const done: SectionId[] = ['about', 'experience', 'skills']
 
 function App() {
   const { t } = useLanguage()
@@ -13,10 +18,11 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
+        <Skills />
 
-        {/* section ที่ยังไม่ได้ทำ: ทำเสร็จทีละอันแล้วค่อยลบออกจากรายการ */}
         {sectionIds
-          .filter((id) => id !== 'about')
+          .filter((id) => !done.includes(id))
           .map((id) => (
             <section key={id} id={id}
                      className="min-h-screen flex items-center justify-center border-t border-black/5">
