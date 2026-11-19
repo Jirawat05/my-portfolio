@@ -35,13 +35,14 @@ const th: Content = {
     ],
   },
 
-  skills: {
+    skills: {
     title: 'ทักษะ',
     groups: [
-      { name: 'แอปธุรกิจ', items: ['Power Apps', 'SharePoint', 'Power BI'] },
-      { name: 'ข้อมูล', items: ['SQL', 'Data modeling', 'Data cleaning', 'Excel'] },
-      { name: 'เว็บ', items: ['React', 'TypeScript', 'Tailwind CSS'] },
-      { name: 'เครื่องมือ', items: ['Git', 'VS Code'] },
+      { name: 'ภาษาโปรแกรม', items: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C / C++'] },
+      { name: 'ฟรอนต์เอนด์', items: ['React', 'HTML', 'CSS', 'Tailwind CSS'] },
+      { name: 'ฐานข้อมูล', items: ['MySQL', 'PostgreSQL', 'SQL Server', 'SQLite'] },
+      { name: 'แอปธุรกิจ', items: ['Power Apps', 'Power BI', 'SharePoint', 'Excel'] },
+      { name: 'เครื่องมือ', items: ['Git', 'GitHub', 'VS Code', 'Docker', 'Postman', 'Figma', 'Google Sheets', 'Apps Script'] },
     ],
   },
 
