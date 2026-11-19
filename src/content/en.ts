@@ -35,14 +35,13 @@ const en: Content = {
     ],
   },
 
-    skills: {
+     skills: {
     title: 'Skills',
     groups: [
       { name: 'Languages', items: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C / C++'] },
       { name: 'Frontend', items: ['React', 'HTML', 'CSS', 'Tailwind CSS'] },
-      { name: 'Databases', items: ['MySQL', 'PostgreSQL', 'SQL Server', 'SQLite'] },
-      { name: 'Business apps', items: ['Power Apps', 'Power BI', 'SharePoint', 'Excel'] },
-      { name: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Docker', 'Postman', 'Figma', 'Google Sheets', 'Apps Script'] },
+      { name: 'Databases', items: ['MySQL', 'PostgreSQL', 'SQLite'] },
+      { name: 'Tools', items: ['Git', 'GitHub', 'Docker', 'Postman', 'Figma', 'Google Sheets', 'Apps Script'] },
     ],
   },
 

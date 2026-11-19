@@ -11,15 +11,12 @@ export{
   siTailwindcss,
   siMysql,
   siPostgresql,
-  siMicrosoftsqlserver,
+  
   siSqlite,
-  siPowerapps,
-  siPowerbi,
-  siMicrosoftsharepoint,
-  siMicrosoftexcel,
+ 
   siGit,
   siGithub,
-  siVisualstudiocode,
+  
   siDocker,
   siPostman,
   siFigma,

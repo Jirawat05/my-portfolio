@@ -1,12 +1,14 @@
 import { useLanguage } from '../i18n/useLanguage'
+import { NetworkBackground } from '../components/NetworkBackground'
 
 export function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section id="top" className="flex min-h-svh items-center justify-center bg-mist px-6 pt-12">
-      <div className="max-w-3xl text-center">
-        {/* รูปโปรไฟล์: ตอนนี้ใช้อักษรตัวแรกไปก่อน */}
+    <section id="top" className="relative flex min-h-svh items-center justify-center overflow-hidden bg-mist px-6 pt-24 pb-20">
+      <NetworkBackground />
+
+      <div className="relative max-w-3xl text-center">
         <div className="mx-auto mb-10 flex h-28 w-28 items-center justify-center rounded-full bg-white text-4xl font-semibold shadow-sm ring-1 ring-black/5 motion-safe:animate-rise">
           {t.hero.name.charAt(0)}
         </div>
@@ -19,7 +21,7 @@ export function Hero() {
           {t.hero.name}
         </h1>
 
-        <p className="mx-auto mt-6 max-w-xl text-xl md:text-2xl text-muted leading-relaxed motion-safe:animate-rise [animation-delay:300ms]">
+        <p className="mx-auto mt-6 max-w-xl text-balance text-xl md:text-2xl text-muted leading-relaxed motion-safe:animate-rise [animation-delay:300ms]">
           {t.hero.tagline}
         </p>
 
@@ -29,7 +31,7 @@ export function Hero() {
             {t.hero.primaryCta}
           </a>
           <a href="#contact"
-             className="rounded-full px-6 py-3 text-link ring-1 ring-link transition-colors hover:bg-link hover:text-white">
+             className="rounded-full bg-mist/80 px-6 py-3 text-link ring-1 ring-link transition-colors hover:bg-link hover:text-white">
             {t.hero.secondaryCta}
           </a>
         </div>
