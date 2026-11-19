@@ -7,6 +7,11 @@ export function Navbar() {
   const { t } = useLanguage()
   const [open, setOpen] = useState(false)
 
+  // ซ่อนเมนู "ใบรับรอง" เมื่อยังไม่มีใบรับรอง
+  const visibleIds = sectionIds.filter(
+    (id) => id !== 'certificates' || t.certificates.items.length > 0,
+  )
+
   // กด Esc เพื่อปิดเมนูมือถือ
   useEffect(() => {
     if (!open) return
@@ -28,7 +33,7 @@ export function Navbar() {
         {/* เมนูสำหรับจอคอม */}
         <div className="hidden items-center gap-8 md:flex">
           <ul className="flex gap-7 text-xs text-ink/80">
-            {sectionIds.map((id) => (
+            {visibleIds.map((id) => (
               <li key={id}>
                 <a href={`#${id}`} className="transition-colors hover:text-ink">
                   {t.nav[id]}
@@ -57,7 +62,7 @@ export function Navbar() {
       {open && (
         <div id="mobile-menu" className="border-t border-black/5 px-6 pb-8 pt-4 md:hidden">
           <ul className="space-y-1">
-            {sectionIds.map((id) => (
+            {visibleIds.map((id) => (
               <li key={id}>
                 <a
                   href={`#${id}`}

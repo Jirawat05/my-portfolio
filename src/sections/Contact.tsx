@@ -40,7 +40,9 @@ export function Contact() {
 
       <ul className="mt-12 flex justify-center gap-8 text-white/70">
         <li><a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-white">GitHub</a></li>
-        <li><a href={profile.linkedin} target="_blank" rel="noreferrer" className="hover:text-white">LinkedIn</a></li>
+        {profile.linkedin && (
+          <li><a href={profile.linkedin} target="_blank" rel="noreferrer" className="hover:text-white">LinkedIn</a></li>
+        )}
       </ul>
     </Section>
   )

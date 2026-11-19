@@ -15,7 +15,7 @@ const en: Content = {
     title: 'About me',
     lead: 'I turn messy, manual processes into simple apps and clean data.',
     paragraphs: [
-      'I am a [year]-year [major] student at [university], currently on a co-op placement.',
+      'I am a university student on a co-op placement, building tools for a manufacturing team.',
       'I enjoy talking with the people who do the work, finding where things get stuck, and building something that helps.',
     ],
   },
@@ -25,7 +25,7 @@ const en: Content = {
     items: [
       {
         role: 'Co-op Student',
-        org: '[Company name]',
+        org: 'Manufacturing company',
         period: '2026',
         points: [
           'Built an ink stock app with Power Apps and SharePoint to replace manual tracking.',
@@ -71,8 +71,8 @@ const en: Content = {
         year: '2026',
         summary: 'Moved QA leak records out of scattered spreadsheets and forms into one database design.',
         highlights: [
-          'Profiled about 2,500 production orders and 480 leak records.',
-          'Found 11 data-quality issues, such as Buddhist-year dates and lost leading zeros.',
+          'Profiled thousands of production orders and hundreds of leak records.',
+          'Found and documented data-quality issues, such as Buddhist-year dates and lost leading zeros.',
           'Designed tables for master data, production, QA records and an audit log.',
           'Defined validation rules, such as checking that a serial number is in range.',
         ],
@@ -84,7 +84,7 @@ const en: Content = {
   certificates: {
     title: 'Certificates',
     viewCredential: 'View credential',
-        items: [{ title: '[Certificate name]', issuer: '[Organization]', date: '2026' }],
+    items: [],
   },
 
   contact: {

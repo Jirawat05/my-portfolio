@@ -1,5 +1,5 @@
 export const profile = {
-  email: 'your.email@example.com',
-  github: 'https://github.com/your-username',
-  linkedin: 'https://www.linkedin.com/in/your-username',
+  email: 'jirawat33163@gmail.com',
+  github: 'https://github.com/Jirawat05',
+  linkedin: '', // ยังไม่มี
 }

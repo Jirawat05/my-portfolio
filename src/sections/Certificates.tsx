@@ -4,6 +4,9 @@ import { Section } from '../components/Section'
 export function Certificates() {
   const { t } = useLanguage()
 
+  // ยังไม่มีใบรับรอง ก็ไม่ต้องแสดง section นี้
+  if (t.certificates.items.length === 0) return null
+
   return (
     <Section id="certificates" title={t.certificates.title} tone="mist">
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
