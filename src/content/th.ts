@@ -49,6 +49,8 @@ const th: Content = {
     title: 'ผลงาน',
     viewDetails: 'ดูรายละเอียด',
     close: 'ปิด',
+    viewCode: 'ดูโค้ด',
+    viewDemo: 'ดูเว็บจริง',
     items: [
       {
         id: 'ink-stock',
@@ -77,6 +79,22 @@ const th: Content = {
           'กำหนดกฎตรวจสอบข้อมูล เช่น เลขซีเรียลต้องอยู่ในช่วงที่ออกให้',
         ],
         tech: ['SQL', 'Data modeling', 'Excel', 'Google Sheets'],
+      },
+      {
+        id: 'portfolio',
+        title: 'เว็บพอร์ตโฟลิโอ',
+        category: 'เว็บ',
+        year: '2569',
+        summary: 'เว็บนี้เอง พอร์ตโฟลิโอสองภาษาที่สร้างด้วย React และ Tailwind CSS',
+        highlights: [
+          'สลับภาษาไทยและอังกฤษได้ โดยเก็บข้อความทั้งหมดไว้ในไฟล์เนื้อหาที่กำหนดชนิดข้อมูลไว้',
+          'แสดงรายละเอียดผลงานในป๊อปอัปที่รองรับการเข้าถึง',
+          'ปิดแอนิเมชันให้อัตโนมัติเมื่อผู้ใช้ตั้งค่าลดการเคลื่อนไหว',
+          'เผยแพร่บน GitHub Pages',
+        ],
+        tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+        codeUrl: 'https://github.com/Jirawat05/my-portfolio',
+        demoUrl: 'https://jirawat05.github.io/my-portfolio/',
       },
     ],
   },

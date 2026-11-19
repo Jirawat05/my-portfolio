@@ -49,6 +49,8 @@ const en: Content = {
     title: 'Projects',
     viewDetails: 'View details',
     close: 'Close',
+    viewCode: 'View code',
+    viewDemo: 'Live demo',
     items: [
       {
         id: 'ink-stock',
@@ -77,6 +79,22 @@ const en: Content = {
           'Defined validation rules, such as checking that a serial number is in range.',
         ],
         tech: ['SQL', 'Data modeling', 'Excel', 'Google Sheets'],
+      },
+      {
+        id: 'portfolio',
+        title: 'Portfolio Website',
+        category: 'Web',
+        year: '2026',
+        summary: 'This site: a bilingual portfolio built with React and Tailwind CSS.',
+        highlights: [
+          'Switches between Thai and English, with all text kept in typed content files.',
+          'Shows project details in an accessible dialog.',
+          'Respects the reduced-motion setting for animations.',
+          'Deployed on GitHub Pages.',
+        ],
+        tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+        codeUrl: 'https://github.com/Jirawat05/my-portfolio',
+        demoUrl: 'https://jirawat05.github.io/my-portfolio/',
       },
     ],
   },

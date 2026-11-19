@@ -14,7 +14,7 @@ export function Projects() {
     <Section id="projects" title={t.projects.title}>
       <div className="grid gap-6 md:grid-cols-2">
         {t.projects.items.map((project) => (
-          <article key={project.id} className="flex flex-col rounded-3xl bg-mist p-8 md:p-10">
+          <article key={project.id} className="flex flex-col rounded-3xl bg-mist p-8 md:p-10 md:last:odd:col-span-2">
             <p className="flex gap-3 text-sm text-muted">
               <span>{project.category}</span>
               <span>{project.year}</span>

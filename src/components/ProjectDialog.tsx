@@ -68,6 +68,24 @@ export function ProjectDialog({ project, onClose }: ProjectDialogProps) {
               <li key={tech} className="rounded-full bg-mist px-3 py-1 text-sm">{tech}</li>
             ))}
           </ul>
+
+          {/* ปุ่มลิงก์: แสดงเฉพาะเมื่อโปรเจกต์มีลิงก์ */}
+          {(project.demoUrl || project.codeUrl) && (
+            <div className="mt-10 flex flex-wrap gap-4">
+              {project.demoUrl && (
+                <a href={project.demoUrl} target="_blank" rel="noreferrer"
+                   className="rounded-full bg-accent px-6 py-3 text-white transition-colors hover:bg-accent-hover">
+                  {t.projects.viewDemo}
+                </a>
+              )}
+              {project.codeUrl && (
+                <a href={project.codeUrl} target="_blank" rel="noreferrer"
+                   className="rounded-full px-6 py-3 text-link ring-1 ring-link transition-colors hover:bg-link hover:text-white">
+                  {t.projects.viewCode}
+                </a>
+              )}
+            </div>
+          )}
         </div>
       )}
     </dialog>

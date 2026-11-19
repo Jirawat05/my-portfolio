@@ -6,6 +6,8 @@ export type Project = {
   summary: string
   highlights: string[]
   tech: string[]
+  codeUrl?: string   // ลิงก์โค้ด เช่น GitHub
+  demoUrl?: string   // ลิงก์เว็บที่ใช้งานได้จริง
 }
 
 export type Experience = {
@@ -34,7 +36,7 @@ export type Content = {
   about: { title: string; lead: string; paragraphs: string[] }
   experience: { title: string; items: Experience[] }
   skills: { title: string; groups: SkillGroup[] }
-  projects: { title: string; viewDetails: string; close: string; items: Project[] }
+  projects: { title: string; viewDetails: string; close: string; viewCode: string; viewDemo: string; items: Project[] }
   certificates: { title: string; viewCredential: string; items: Certificate[] }
   contact: { title: string; subtitle: string; emailLabel: string; copyEmail: string; copied: string }
 }
