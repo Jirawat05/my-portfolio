@@ -1,5 +1,6 @@
 import { useLanguage } from '../i18n/useLanguage'
 import { NetworkBackground } from '../components/NetworkBackground'
+import { Avatar } from '../components/Avatar'
 
 export function Hero() {
   const { t } = useLanguage()
@@ -9,9 +10,7 @@ export function Hero() {
       <NetworkBackground />
 
       <div className="relative max-w-3xl text-center">
-        <div className="mx-auto mb-10 flex h-28 w-28 items-center justify-center rounded-full bg-white text-4xl font-semibold shadow-sm ring-1 ring-black/5 motion-safe:animate-rise">
-          {t.hero.name.charAt(0)}
-        </div>
+        <Avatar />
 
         <p className="text-xl md:text-2xl text-muted motion-safe:animate-rise [animation-delay:100ms]">
           {t.hero.greeting}
